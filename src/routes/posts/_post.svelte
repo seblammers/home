@@ -12,7 +12,7 @@
   
   {#if categories.length}
     <aside>
-      <h2>Posted in:</h2>
+      <h3>Posted in:</h3>
       <ul>
         {#each categories as category}
           <li>

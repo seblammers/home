@@ -5,3 +5,4 @@
 - SvelteKit
 - VS Code
 - Emojis 😎
+- inline code `like(this)`
