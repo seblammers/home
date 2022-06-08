@@ -16,10 +16,10 @@
     </nav>
   </header>
 
-  <style>
+  <!-- <style>
     header {
       padding: 1rem;
-      background: lightskyblue;
+      /* background: inherit; */
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -36,4 +36,4 @@
       text-decoration: none;
       color: inherit;
     }
-  </style>
+  </style> -->

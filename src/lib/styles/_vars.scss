@@ -1,18 +1,68 @@
 :root {
     // Colors
     // add hsla color palette here
-    --accent: #E63946;
-    --background: #FAF9F8;
-    --lightAccent: #A8DAE5;
-    --lighterAccent: #E6E8E4;
-    --dark: #457B9D;
+    // hat tip to maxim: https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
+    --base-blue: 236, 89%; /* All my colors here share the same hue and saturation */
+
+    /*
+    Here I declare my color palette.
+    Each color is a partial value
+    */
+    --palette-blue-10: var(--base-blue), 10%;
+    --palette-blue-20: var(--base-blue), 20%;
+    --palette-blue-30: var(--base-blue), 30%;
+    --palette-blue-40: var(--base-blue), 40%;
+    --palette-blue-50: var(--base-blue), 50%;
+    --palette-blue-60: var(--base-blue), 60%;
+    --palette-blue-70: var(--base-blue), 70%;
+    --palette-blue-80: var(--base-blue), 80%;
+    --palette-blue-90: var(--base-blue), 90%;
+    --palette-blue-100: var(--base-blue), 100%;
+
+    /*
+    Here I compose a color based on its meaning:
+    - primary and emphasis are composed by using --palette-blue-50
+    - they use a different opacity level thus they have different meaning:
+        - primary is a bold color used for buttons and primary CTA
+        - emphasis is used to highlight content or for the background of my callout cards
+    */
+    --primary: hsla(var(--palette-blue-10), 100%);
+    --emphasis: hsla(var(--palette-blue-10), 8%);
+    --dark: hsla(var(--palette-blue-10), 8%);
+
+
+    // orange palette
+    --base-orange: 34, 89%; /* All my colors here share the same hue and saturation */
+
+    --palette-orange-10: var(--base-orange), 10%;
+    --palette-orange-20: var(--base-orange), 20%;
+    --palette-orange-30: var(--base-orange), 30%;
+    --palette-orange-40: var(--base-orange), 40%;
+    --palette-orange-50: var(--base-orange), 50%;
+    --palette-orange-60: var(--base-orange), 60%;
+    --palette-orange-70: var(--base-orange), 70%;
+    --palette-orange-80: var(--base-orange), 80%;
+    --palette-orange-90: var(--base-orange), 90%;
+    --palette-orange-100: var(--base-orange), 100%;
+
+    --accent: hsla(var(--palette-orange-70), 100%);
+    --accentLight: hsla(var(--palette-orange-70), 8%);
+
+    --accentWhite: hsla(var(--palette-orange-100), 100%);
+    --background: hsla(var(--palette-orange-90), 40%);
+    
+    //--accent: #E63946;
+    //--background: #FAF9F8;
+    //--lightAccent: #A8DAE5;
+    //--lighterAccent: #E6E8E4;
+    //--dark: #457B9D;
     --darker: #1D3557;
     --slate: #2F3948;
   
     --white: #fff;
     --black: #152030;
   
-    --ink: var(--slate);
+    --ink: var(--primary);
     --paper: var(--background);
 
     // utopia for the win
@@ -66,6 +116,7 @@
     --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
     --tracking: -0.05ch;
     --tracking-s: -0.075ch;
+    
     // Fonts
     /**
      * These are broken out into two separate variables from a previous iteration. I left

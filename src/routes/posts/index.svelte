@@ -13,21 +13,23 @@
 
 <script>
     export let posts
+    import { fly } from 'svelte/transition'
   </script>
   
-<h1>Posts</h1>
+<h1 in:fly={{ x: -200, duration: 250, delay: 500 }} >Posts</h1>
 <p>This is where I list the stuff.</p>
 
-<ul>
+<article class="flow">
+  <ul class="flow">
     {#each posts as post}
       <li>
-        <h2>
+        <h3>
           <a href={post.path}>
             {post.meta.title}
           </a>
-        </h2>
+        </h3>
         Published {post.meta.date}
       </li>
     {/each}
   </ul>
-
+</article>

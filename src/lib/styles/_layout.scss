@@ -11,7 +11,7 @@
 main {
   width: 100%;
   max-width: 42rem;
-  margin: 6rem auto;
+  margin: var(--space-3xl) auto;
   padding: 0 1rem;
 }
 
@@ -29,10 +29,12 @@ img {
 }
 
 .post {
+  --flow-space: var(--space-l);
+
   h1 {
     margin-bottom: 1rem;
   }
-
+  
   .meta {
     font-size: 0.8rem;
     margin-bottom: 4rem;
@@ -41,6 +43,23 @@ img {
   img + h1 {
     margin-top: 1rem;
   }
+}
+
+.post :is(h2, h3, h4) {
+  --flow-space: var(--space-xl);
+}
+
+.post :is(h2, h3, h4) + * {
+  --flow-space: var(--space-xs);
+}
+
+.post figure,
+.post figure + * {
+  --flow-space: var(--space-xl);
+}
+
+.post > pre {
+    --flow-space: var(--space-xs);
 }
 
 li {
@@ -88,6 +107,7 @@ li {
 }
 
 :where(h2, h3, h4, h5, h6) {
+
   .icon-link {
     position: relative;
     
@@ -109,4 +129,12 @@ li {
       opacity: 1;
     }
   }
+}
+
+aside {
+  --flow-space: var(--space-xl);
+}
+
+aside > ul {
+  --flow-space: var(--space-xs)
 }

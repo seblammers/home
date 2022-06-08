@@ -1,7 +1,8 @@
 @use './vars';
 
 :where(h1, h2, h3, h4, h5, h6) {
-  margin: 4.5rem 0 1rem;
+  //margin: 4.5rem 0 1rem;
+  margin-top: var(--space-xl);
   line-height: 1.1;
   font-family: var(--accentFont);
   font-weight: 900;

@@ -27,7 +27,11 @@
 <Header />
 
 {#key currentRoute}
-  <main in:fade={{ duration: 250, delay: 250 }} out:fade={{ duration: 250 }}>
+  <main 
+    in:fade={{ duration: 250, delay: 500 }} 
+    out:fade={{ duration: 250 }}
+    class="flow"
+    >
     <slot />
   </main>
 {/key}
