@@ -51,14 +51,16 @@ blockquote:not([class]) {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   max-width: 20ch;
 }
 
 a {
   color: var(--darker);
-  text-decoration-thickness: 1px;
-  text-decoration-color: var(--dark);
+  text-decoration: none;
+  // text-decoration-thickness: 0px;
+  // text-decoration-color: var(--dark);
 }
 
 ul {
