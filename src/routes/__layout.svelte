@@ -24,16 +24,18 @@
 
 </script>
   
-<Header />
+<div class="layout">
+  <Header />
 
-{#key currentRoute}
-  <main 
-    in:fade={{ duration: 250, delay: 500 }} 
-    out:fade={{ duration: 250 }}
-    class="flow"
-    >
-    <slot />
-  </main>
-{/key}
+  {#key currentRoute}
+    <main 
+      in:fade={{ duration: 250, delay: 500 }} 
+      out:fade={{ duration: 250 }}
+      class="flow"
+      >
+      <slot />
+    </main>
+  {/key}
 
-<Footer />
+  <Footer />
+</div>
