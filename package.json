@@ -25,6 +25,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/inter": "^4.5.10"
+		"@fontsource/inter": "^4.5.10",
+		"rehype-autolink-headings": "^6.1.1",
+		"rehype-slug": "^5.0.1"
 	}
 }
