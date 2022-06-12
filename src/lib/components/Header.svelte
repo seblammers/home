@@ -1,39 +1,23 @@
-<header>
-    <a href="/">Home</a>
-  
-    <nav>
-      <ul>
-        <li>
-          <a href="/posts">Posts</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<script>
+  import Hamburger from './Hamburger.svelte'
+  import MainNav from './MainNav.svelte'
+  import { isMenuOpen } from '$lib/assets/js/store'
 
-  <!-- <style>
-    header {
-      padding: 1rem;
-      /* background: inherit; */
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    ul {
-      margin: 0;
-      list-style-type: none;
-      display: flex;
-      gap: 1rem;
-    }
-  
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style> -->
+  const skipToContent = () => {
+    const main = document.querySelector('main');
+    main.focus();
+  }
+</script>
+
+<header>
+  <a on:click|preventDefault={skipToContent} class="skip-to-content-link" href="#main">
+    Skip to main content
+  </a>
+
+  <a href="/" class="site-title">
+    Home
+  </a>
+
+  <Hamburger />
+  <MainNav />
+</header>
