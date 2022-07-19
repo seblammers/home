@@ -1,4 +1,24 @@
 :root {
+  
+    --blue-hue: 236;
+    --orange-hue: 34;
+    --saturation: 100%;
+    --lightness: 50%;
+    
+    // orange for accents and surfaces
+    --brand: hsl(var(--orange-hue) var(--saturation) var(--lightness));
+    --surface1-light: hsl(var(--orange-hue) 25% 90%);
+    --surface2-light: hsl(var(--orange-hue) 20% 99%);
+    --surface3-light: hsl(var(--orange-hue) 20% 92%);
+    --surface4-light: hsl(var(--orange-hue) 20% 85%);
+
+    // blue based colours for texts and shadows
+    --hue: var(--blue-hue);
+    --text1-light: hsl(var(--hue) var(--saturation) 10%);
+    --text2-light: hsl(var(--hue) 30% 30%);
+    --surface-shadow-light: var(--hue) 10% calc(var(--lightness) / 5);
+    --shadow-strength-light: .02;
+
     // Colors
     // add hsla color palette here
     // hat tip to maxim: https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
@@ -19,6 +39,17 @@
     --palette-blue-90: var(--base-blue), 90%;
     --palette-blue-100: var(--base-blue), 100%;
 
+    --palette-blue-10-base: hsla(var(--palette-blue-10), 100%);
+    --palette-blue-20-base: hsla(var(--palette-blue-20), 100%);
+    --palette-blue-30-base: hsla(var(--palette-blue-30), 100%);
+    --palette-blue-40-base: hsla(var(--palette-blue-40), 100%);
+    --palette-blue-50-base: hsla(var(--palette-blue-50), 100%);
+    --palette-blue-60-base: hsla(var(--palette-blue-60), 100%);
+    --palette-blue-70-base: hsla(var(--palette-blue-70), 100%);
+    --palette-blue-80-base: hsla(var(--palette-blue-80), 100%);
+    --palette-blue-90-base: hsla(var(--palette-blue-90), 100%);
+    --palette-blue-100-base: hsla(var(--palette-blue-100), 100%);
+
     /*
     Here I compose a color based on its meaning:
     - primary and emphasis are composed by using --palette-blue-50
@@ -28,7 +59,7 @@
     */
     --primary: hsla(var(--palette-blue-10), 100%);
     --emphasis: hsla(var(--palette-blue-10), 8%);
-    --dark: hsla(var(--palette-blue-10), 8%);
+    --dark: hsla(var(--palette-blue-10), 80%);
 
 
     // orange palette
@@ -45,18 +76,31 @@
     --palette-orange-90: var(--base-orange), 90%;
     --palette-orange-100: var(--base-orange), 100%;
 
+    --palette-orange-10-base: hsla(var(--palette-orange-10), 100%);
+    --palette-orange-20-base: hsla(var(--palette-orange-20), 100%);
+    --palette-orange-30-base: hsla(var(--palette-orange-30), 100%);
+    --palette-orange-40-base: hsla(var(--palette-orange-40), 100%);
+    --palette-orange-50-base: hsla(var(--palette-orange-50), 100%);
+    --palette-orange-60-base: hsla(var(--palette-orange-60), 100%);
+    --palette-orange-70-base: hsla(var(--palette-orange-70), 100%);
+    --palette-orange-80-base: hsla(var(--palette-orange-80), 100%);
+    --palette-orange-90-base: hsla(var(--palette-orange-90), 100%);
+    --palette-orange-100-base: hsla(var(--palette-orange-100), 100%);
+
     --accent: hsla(var(--palette-orange-70), 100%);
     --accentLight: hsla(var(--palette-orange-70), 8%);
+    --accentBlue: var(--palette-blue-50-base);
 
     --accentWhite: hsla(var(--palette-orange-100), 100%);
-    --background: hsla(var(--palette-orange-90), 40%);
-    
+    --background: hsla(var(--palette-orange-100), 100%);
+    --background-nav: hsla(var(--palette-orange-90), 100%);
     //--accent: #E63946;
     //--background: #FAF9F8;
     //--lightAccent: #A8DAE5;
     //--lighterAccent: #E6E8E4;
     //--dark: #457B9D;
-    --darker: #1D3557;
+    --darker: var(--palette-blue-20-base);
+    --darker-hover: #2F3948;
     --slate: #2F3948;
   
     --white: #fff;
@@ -64,6 +108,7 @@
   
     --ink: var(--primary);
     --paper: var(--background);
+
 
     // utopia for the win
     // text sizes
