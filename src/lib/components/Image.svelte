@@ -94,8 +94,8 @@
   
     .expanded {
       z-index: 103;
-      max-height: 95%;
-      max-width: 95%;
+      max-height: 85%;
+      max-width: 85%;
       left: 50%;
       top: 50%;
       position: fixed;
