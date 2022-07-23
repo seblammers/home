@@ -33,12 +33,7 @@
                 <div
                     class="logo"
                     in:fly={{ y: -20, duration: 750, delay: 100 }}>
-                    <a
-                        href="/"
-                        class:active={$page.url.pathname == '/'}
-                        in:fly={{ y: -20, duration: 750 }}>
                         <Home />
-                    </a>
                 </div>
             </a>
 
@@ -54,6 +49,14 @@
                 class:open={!$navigating && (open || !mobile)}>
                 
                 <div class="links">
+
+                    <a
+                        href="/"
+                        class:active={$page.url.pathname === '/'}
+                        in:fly={{ y: -20, duration: 750}}
+                        >
+                        Home
+                    </a>
                     {#each navItems as page, i (i)}
                         <a
                             href={page.route}
