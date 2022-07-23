@@ -9,28 +9,35 @@ code {
 pre {
   overflow-y: auto;
   color: var(--paper);
-  background: var(--darker);
+  background: var(--dark);
   padding: var(--space-2xs);
   font-size: var(--step--1);
 }
 
 code {
-  color: var(--darker);
+  color: var(--dark);
   font-size: var(--step--1);
-  padding: var(--space-2xs) ;
-  border-radius: 4px;
+  padding: var(--space-2xs);
+  border-radius: var(--space-2xs);
   border-color: var(--accent);
   
+  // high contrast highlight on selection
+  & ::selection {
+    color: var(--dark);
+    background: var(--surface2-light);
+  }
+
 }
 
 pre code {
   padding: 0;
   background: transparent;
-  font-size: var(--step--1);
+  font-size: var(--step--3);
 }
 
 p > code {
   border-style: solid;
-  background: var(--accentWhite);
+  background: var(--surface2-light);
   border-width: 0.1rem;
+  font-weight: 600;
 }
