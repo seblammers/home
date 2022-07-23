@@ -1,7 +1,9 @@
 <script>
-    import { fly } from 'svelte/transition'
+    import Heading from "../lib/components/Heading.svelte";
 </script>
 
-<h1 in:fly={{ x: -200, duration: 250, delay: 500 }} >Get in touch</h1>
+<Heading>
+    Get in touch
+</Heading>
 
 <p>Just message me :)</p>
