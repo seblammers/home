@@ -5,9 +5,9 @@
   margin-top: var(--space-xl);
   line-height: 1.1;
   font-family: var(--accentFont);
-  font-weight: 900;
+  font-weight: 700;
   
-  color: var(--darker);
+  color: var(--text1-light);
 }
 
 h1 {
@@ -46,21 +46,36 @@ h4, h5, h6 {
 p,
 li,
 blockquote:not([class]) {
-  max-width: 50ch;
+  max-width: 60rem;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  max-width: 20ch;
+  max-width: 40ch;
+
+  & > a {
+    color: currentColor;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--dark);
+    }
+  }
 }
 
-a {
-  color: var(--darker);
-  text-decoration: none;
-  // text-decoration-thickness: 0px;
-  // text-decoration-color: var(--dark);
+p > a {
+  color: var(--dark);
+  color: currentColor;
+  text-decoration-color: var(--dark);
+  text-underline-offset: 1px;
+
+  &:hover {
+    color: var(--surface2-light);
+    background-color: var(--accent);
+    text-decoration-color: var(--surface2-light);
+  }
 }
 
 ul {

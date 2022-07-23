@@ -2,15 +2,17 @@
   
     --blue-hue: 236;
     --orange-hue: 34;
+    --red-hue: 22;
+    --teal-hue: 172;
     --saturation: 100%;
     --lightness: 50%;
     
     // orange for accents and surfaces
-    --brand: hsl(var(--orange-hue) var(--saturation) var(--lightness));
-    --surface1-light: hsl(var(--orange-hue) 25% 90%);
-    --surface2-light: hsl(var(--orange-hue) 20% 99%);
-    --surface3-light: hsl(var(--orange-hue) 20% 92%);
-    --surface4-light: hsl(var(--orange-hue) 20% 85%);
+    --brand: hsl(var(--orange-hue) var(--saturation) 70%);
+    --surface1-light: hsl(var(--orange-hue) 45% 90%);
+    --surface2-light: hsl(var(--orange-hue) 40% 99%);
+    --surface3-light: hsl(var(--orange-hue) 40% 92%);
+    --surface4-light: hsl(var(--orange-hue) 40% 85%);
 
     // blue based colours for texts and shadows
     --hue: var(--blue-hue);
@@ -19,6 +21,10 @@
     --surface-shadow-light: var(--hue) 10% calc(var(--lightness) / 5);
     --shadow-strength-light: .02;
 
+    --brandBlue: hsl(var(--blue-hue) var(--saturation) 31%);
+    --brandTeal: hsl(var(--teal-hue) 35% 70%);
+    --brandRed: hsl(var(--red-hue) var(--saturation) 40%);
+    
     // Colors
     // add hsla color palette here
     // hat tip to maxim: https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
@@ -57,9 +63,9 @@
         - primary is a bold color used for buttons and primary CTA
         - emphasis is used to highlight content or for the background of my callout cards
     */
-    --primary: hsla(var(--palette-blue-10), 100%);
-    --emphasis: hsla(var(--palette-blue-10), 8%);
-    --dark: hsla(var(--palette-blue-10), 80%);
+    --primary: var(--text1-light);
+    --emphasis: var(--text2-light);
+    --dark: var(--text1-light);
 
 
     // orange palette
@@ -87,13 +93,13 @@
     --palette-orange-90-base: hsla(var(--palette-orange-90), 100%);
     --palette-orange-100-base: hsla(var(--palette-orange-100), 100%);
 
-    --accent: hsla(var(--palette-orange-70), 100%);
+    --accent: var(--brand);
     --accentLight: hsla(var(--palette-orange-70), 8%);
     --accentBlue: var(--palette-blue-50-base);
 
     --accentWhite: hsla(var(--palette-orange-100), 100%);
-    --background: hsla(var(--palette-orange-100), 100%);
-    --background-nav: hsla(var(--palette-orange-90), 100%);
+    --background: var(--surface1-light);
+    --background-nav: var(--surface4-light);
     //--accent: #E63946;
     //--background: #FAF9F8;
     //--lightAccent: #A8DAE5;
