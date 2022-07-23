@@ -6,13 +6,24 @@
   box-sizing: border-box;
   font-family: inherit;
   max-width: 100%;
+  scrollbar-color: var(--accent);
+}
+
+html, body {
+  scrollbar-color: var(--accent) transparent;
+  scrollbar-width: thin;
 }
 
 main {
   width: 100%;
-  max-width: 42rem;
+  max-width: 60ch;
   margin: var(--space-3xl) auto;
   padding: 0 1rem;
+  min-height: 65vh; // make sure the footer does not get to big when content is little
+  
+  & > p, pre {
+    max-width: 60rem;
+  }
 }
 
 .layout {
@@ -50,7 +61,7 @@ img {
 }
 
 .post :is(h2, h3, h4) + * {
-  --flow-space: var(--space-xs);
+  --flow-space: var(--space-2xs);
 }
 
 .post figure,
@@ -114,10 +125,10 @@ li {
   //color: '#000';
   padding-bottom: var(--s);
   background: 
-    linear-gradient(90deg,var(--c) 50%,rgb(166, 26, 26) 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(90deg,var(--c) 50%,var(--c) 0) calc(100% - var(--_p,0%))/200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-  -webkit-background-clip: text,padding-box;
-  background-clip: text,padding-box;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
   transition: 0.5s;
   
   &:hover {
@@ -132,4 +143,22 @@ aside {
 
 aside > ul {
   --flow-space: var(--space-xs)
+}
+
+.pill {
+  display: inline-block;
+  padding: .3rem .4rem .2rem;
+  border-radius: .5rem;
+  border: 2px solid var(--accent);
+  background: inherit;
+  color: inherit;
+  font-size: var(--step-1);
+  line-height: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+  
+  &:hover {
+    background-color: var(--accent);
+    color: white;
+  }
 }
