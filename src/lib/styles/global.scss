@@ -2,7 +2,6 @@
 @use './vars';
 @use './code';
 @use './forms';
-@use './header-and-footer';
 @use './layout';
 @use './prism';
 @use './typography';
@@ -30,11 +29,14 @@ body {
   background: var(--paper);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow: scroll;
+  overflow-x: hidden; 
+  
 }
 
 ::selection {
-  color: var(--accentWhite);
-  background: var(--darker);
+  color: var(--paper);
+  background: var(--dark);
 }
 
 .flow > * + * {
