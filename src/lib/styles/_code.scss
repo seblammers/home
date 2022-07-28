@@ -16,7 +16,7 @@ pre {
 
 code {
   color: var(--dark);
-  font-size: var(--step--1);
+  font-size: calc(var(--step--1) * 1.6);
   padding: var(--space-2xs);
   border-radius: var(--space-2xs);
   border-color: var(--accent);
@@ -29,15 +29,15 @@ code {
 
 }
 
-pre code {
-  padding: 0;
-  background: transparent;
-  font-size: var(--step--3);
-}
+// pre code {
+//   padding: 0;
+//   background: transparent;
+//   font-size: var(--step--3);
+// }
 
 p > code {
   border-style: solid;
   background: var(--surface2-light);
   border-width: 0.1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
