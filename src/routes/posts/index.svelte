@@ -13,23 +13,18 @@
 
 <script>
     export let posts
-    import { fly } from 'svelte/transition'
+    import Heading from "$lib/components/Heading.svelte";
+    import Card from '$lib/components/Card.svelte';
   </script>
   
-<h1 in:fly={{ x: -200, duration: 250, delay: 500 }} >Posts</h1>
-<p>This is where I list the stuff.</p>
+<Heading>
+  Posts
+</Heading>
 
 <article class="flow">
-  <ul class="flow">
-    {#each posts as post}
-      <li>
-        <h3>
-          <a href={post.path}>
-            {post.meta.title}
-          </a>
-        </h3>
-        Published {post.meta.date}
-      </li>
-    {/each}
-  </ul>
+  
+  {#each posts as post}
+    <Card {post} />
+  {/each}
+  
 </article>

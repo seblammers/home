@@ -38,9 +38,6 @@
         }
         &:hover {
             box-shadow: 0px 0px 20px var(--accent);
-            
-            // -webkit-transform: translate(0,-10px);
-            // transform: translate(0,-10px);
         }
         &:hover h3 {
             transform: scale(1.01) translateY(-10%);
@@ -48,11 +45,8 @@
         h3:hover {
             --_p: 0%;
         }
-
         time {
             color: var(--ink);
         }
-    }
-
-    
+    }    
 </style>
