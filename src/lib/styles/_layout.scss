@@ -58,6 +58,7 @@ img {
 
 .post :is(h2, h3, h4) {
   --flow-space: var(--space-xl);
+  scroll-margin-top: var(--space-2xl);
 }
 
 .post :is(h2, h3, h4) + * {
