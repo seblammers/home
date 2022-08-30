@@ -25,96 +25,15 @@
     --brandTeal: hsl(var(--teal-hue) 35% 70%);
     --brandRed: hsl(var(--red-hue) var(--saturation) 40%);
     
-    // Colors
-    // add hsla color palette here
-    // hat tip to maxim: https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
-    --base-blue: 236, 89%; /* All my colors here share the same hue and saturation */
-
-    /*
-    Here I declare my color palette.
-    Each color is a partial value
-    */
-    --palette-blue-10: var(--base-blue), 10%;
-    --palette-blue-20: var(--base-blue), 20%;
-    --palette-blue-30: var(--base-blue), 30%;
-    --palette-blue-40: var(--base-blue), 40%;
-    --palette-blue-50: var(--base-blue), 50%;
-    --palette-blue-60: var(--base-blue), 60%;
-    --palette-blue-70: var(--base-blue), 70%;
-    --palette-blue-80: var(--base-blue), 80%;
-    --palette-blue-90: var(--base-blue), 90%;
-    --palette-blue-100: var(--base-blue), 100%;
-
-    --palette-blue-10-base: hsla(var(--palette-blue-10), 100%);
-    --palette-blue-20-base: hsla(var(--palette-blue-20), 100%);
-    --palette-blue-30-base: hsla(var(--palette-blue-30), 100%);
-    --palette-blue-40-base: hsla(var(--palette-blue-40), 100%);
-    --palette-blue-50-base: hsla(var(--palette-blue-50), 100%);
-    --palette-blue-60-base: hsla(var(--palette-blue-60), 100%);
-    --palette-blue-70-base: hsla(var(--palette-blue-70), 100%);
-    --palette-blue-80-base: hsla(var(--palette-blue-80), 100%);
-    --palette-blue-90-base: hsla(var(--palette-blue-90), 100%);
-    --palette-blue-100-base: hsla(var(--palette-blue-100), 100%);
-
-    /*
-    Here I compose a color based on its meaning:
-    - primary and emphasis are composed by using --palette-blue-50
-    - they use a different opacity level thus they have different meaning:
-        - primary is a bold color used for buttons and primary CTA
-        - emphasis is used to highlight content or for the background of my callout cards
-    */
     --primary: var(--text1-light);
     --emphasis: var(--text2-light);
     --dark: var(--text1-light);
 
-
-    // orange palette
-    --base-orange: 34, 89%; /* All my colors here share the same hue and saturation */
-
-    --palette-orange-10: var(--base-orange), 10%;
-    --palette-orange-20: var(--base-orange), 20%;
-    --palette-orange-30: var(--base-orange), 30%;
-    --palette-orange-40: var(--base-orange), 40%;
-    --palette-orange-50: var(--base-orange), 50%;
-    --palette-orange-60: var(--base-orange), 60%;
-    --palette-orange-70: var(--base-orange), 70%;
-    --palette-orange-80: var(--base-orange), 80%;
-    --palette-orange-90: var(--base-orange), 90%;
-    --palette-orange-100: var(--base-orange), 100%;
-
-    --palette-orange-10-base: hsla(var(--palette-orange-10), 100%);
-    --palette-orange-20-base: hsla(var(--palette-orange-20), 100%);
-    --palette-orange-30-base: hsla(var(--palette-orange-30), 100%);
-    --palette-orange-40-base: hsla(var(--palette-orange-40), 100%);
-    --palette-orange-50-base: hsla(var(--palette-orange-50), 100%);
-    --palette-orange-60-base: hsla(var(--palette-orange-60), 100%);
-    --palette-orange-70-base: hsla(var(--palette-orange-70), 100%);
-    --palette-orange-80-base: hsla(var(--palette-orange-80), 100%);
-    --palette-orange-90-base: hsla(var(--palette-orange-90), 100%);
-    --palette-orange-100-base: hsla(var(--palette-orange-100), 100%);
-
     --accent: var(--brand);
-    --accentLight: hsla(var(--palette-orange-70), 8%);
-    --accentBlue: var(--palette-blue-50-base);
-
-    --accentWhite: hsla(var(--palette-orange-100), 100%);
     --background: var(--surface1-light);
     --background-nav: var(--surface4-light);
-    //--accent: #E63946;
-    //--background: #FAF9F8;
-    //--lightAccent: #A8DAE5;
-    //--lighterAccent: #E6E8E4;
-    //--dark: #457B9D;
-    --darker: var(--palette-blue-20-base);
-    --darker-hover: #2F3948;
-    --slate: #2F3948;
-  
-    --white: #fff;
-    --black: #152030;
-  
     --ink: var(--primary);
     --paper: var(--background);
-
 
     // utopia for the win
     // text sizes
@@ -158,7 +77,7 @@
     /* Custom pairs */
     --space-s-l: clamp(1.00rem, calc(0.15rem + 4.27vw), 3.75rem);
   
-    // some additional vars inspired by Andy Bell's Build-Excellent-Website
+    // some additional vars inspired by Andy Bell's Build-Excellent-Websites
     --gutter: var(--space-s-m);
     --border-radius: var(--step-1);
     --transition-base: 250ms ease;
@@ -169,10 +88,6 @@
     --tracking-s: -0.075ch;
     
     // Fonts
-    /**
-     * These are broken out into two separate variables from a previous iteration. I left
-     * it in because it's nice to be able to split out the heading and body fonts.
-     */
     --accentFont: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
     --primaryFont: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"; 
     --codeFont: "Fira Code", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", "monospace"; 
