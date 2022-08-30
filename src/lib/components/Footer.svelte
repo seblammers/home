@@ -24,7 +24,7 @@
 <style lang="scss">
   footer {
   background: var(--ink);
-  color: var(--paper);
+  color: var(--surface2-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
