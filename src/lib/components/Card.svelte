@@ -9,11 +9,12 @@
 >
     <a sveltekit:prefetch href={post.path}>
     <div>
-        <h3 class="">
+        <h3 class="title">
         {post.meta.title}
         </h3>
-        <div class="">
+        <div class="more">
         <time>{dateFormat(post.meta.date)}</time>
+        <div class="pill">Read More</div>
         </div>
     </div>
     </a>
@@ -36,8 +37,14 @@
                 color: inherit;
             }
         }
+    
         &:hover {
             box-shadow: 0px 0px 20px var(--accent);
+
+            .pill {
+                background-color: var(--accent);
+                color: var(--surface2-light);
+            }
         }
         &:hover h3 {
             transform: scale(1.01) translateY(-10%);
@@ -48,5 +55,19 @@
         time {
             color: var(--ink);
         }
+
+        .pill {
+            color: var(--ink);
+            // transition-property: color;
+            // transition-duration: 0.5s;
+        }
+        .more {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
     }    
+    
+
 </style>
