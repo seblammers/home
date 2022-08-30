@@ -80,13 +80,38 @@ p > a {
 
 ul {
   list-style-type: square;
-  padding-left: 1.5rem;
+  padding-left: var(--space-m);
 
   ul {
-    list-style-type: disc;
+    list-style-type: square;
   }
 
   ::marker {
     color: var(--accent);
+  }
+}
+
+ol {
+
+  list-style-type: none;
+  counter-reset: ordered;
+  margin-left: 20px;
+
+  li {
+    margin-bottom: var(--space-m);
+
+    &::before {
+      border-bottom: calc(var(--space-3xs) / 2) solid var(--accent);
+      // border-radius: .5rem;
+      color: var(--ink);
+      content: counter(ordered) ".";
+      counter-increment: ordered;
+      display: inline-block;
+      // font-weight: 100;
+      margin-left: -50px;
+      margin-top: -7px;
+      padding: 5px 5px;
+      position: absolute;
+    }
   }
 }
