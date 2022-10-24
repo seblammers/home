@@ -21,11 +21,11 @@
 </article>
 
 <style lang="scss">
+    
     .card {
-        border-radius: 0.15em;
-        border: 1px solid;
-        border-color: var(--accent);
-        border: 2px solid var(--accent);
+        font-family: var(--accentFont);
+        border-radius: var(--radius);
+        border: var(--radius) solid var(--accent);
         padding: var(--space-m);
         background-color: var(--surface2-light);
         max-width: 42rem;
@@ -44,6 +44,7 @@
             .pill {
                 background-color: var(--accent);
                 color: var(--surface2-light);
+                
             }
         }
         &:hover h3 {
