@@ -79,6 +79,7 @@
 <style lang="scss">
     
     .wrapper {
+        font-family: var(--accentFont);
         position: fixed;
         z-index: 300;
         top: 0;
@@ -112,7 +113,6 @@
     }
     nav { 
         width: 100%;
-        
         max-width: 1600px;
         margin: 0 auto;
         padding: var(--space-s);
@@ -188,9 +188,5 @@
         display: grid;
         place-items: start;
         font-weight: 600;
-
-        a {
-            
-        }
     }
 </style>
