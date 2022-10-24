@@ -4,7 +4,7 @@
   //margin: 4.5rem 0 1rem;
   margin-top: var(--space-xl);
   line-height: 1.1;
-  font-family: var(--accentFont);
+  font-family: var(--headingFont);
   font-weight: 700;
   
   color: var(--text1-light);
@@ -26,8 +26,6 @@ h1 {
     position: absolute;
     bottom: 0;
   }
-
-
 }
 
 h2 {
@@ -46,7 +44,7 @@ h4, h5, h6 {
 p,
 li,
 blockquote:not([class]) {
-  max-width: 60rem;
+  max-width: var(--max-width);
 }
 
 h1,
@@ -64,6 +62,7 @@ h4 {
     }
   }
 }
+
 
 p > a {
   color: var(--dark);
@@ -101,13 +100,13 @@ ol {
     margin-bottom: var(--space-m);
 
     &::before {
-      border-bottom: calc(var(--space-3xs) / 2) solid var(--accent);
+      border-bottom: calc(var(--space-3xs) / 1.5) solid var(--accent);
       // border-radius: .5rem;
       color: var(--ink);
       content: counter(ordered) ".";
       counter-increment: ordered;
       display: inline-block;
-      // font-weight: 100;
+      font-weight: 500;
       margin-left: -50px;
       margin-top: -7px;
       padding: 5px 5px;

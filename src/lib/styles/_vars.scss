@@ -35,6 +35,9 @@
     --ink: var(--primary);
     --paper: var(--background);
 
+    --radius: 0.1em;
+    --max-width: 60rem;
+
     // utopia for the win
     // text sizes
     /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1350,20,1.414,8,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
@@ -88,9 +91,10 @@
     --tracking-s: -0.075ch;
     
     // Fonts
-    --accentFont: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
-    --primaryFont: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"; 
-    --codeFont: "Fira Code", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", "monospace"; 
+    --primaryFont: "PiazzollaVariable", "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif;
+    --accentFont: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "avenir next", "avenir", "segoe ui", "helvetica neue", helvetica, "Cantarell", "Ubuntu", "roboto", "noto", "arial", sans-serif; 
+    --headingFont: "IBM Plex Sans Condensed", -apple-system, BlinkMacSystemFont, "avenir next", "avenir", "segoe ui", "helvetica neue", helvetica, "Cantarell", "Ubuntu", "roboto", "noto", "arial", sans-serif; 
+    --codeFont: "IBM Plex Mono", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace; 
   
     // Base styles
     font-size: 1rem;
