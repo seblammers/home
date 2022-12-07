@@ -12,14 +12,9 @@ categories:
 <script>
   import Accordion from '$lib/components/Accordion.svelte';
   import Blockquote from '$lib/components/Blockquote.svelte';
-  import Code from '$lib/components/Code.svelte';
 </script>
 
-<Code language="js">
-```
-let data = []
-```
-</Code>
+
 
 Here is my new blockquote:
 <Blockquote 
