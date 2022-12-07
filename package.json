@@ -17,6 +17,7 @@
 	"devDependencies": {
 		"@magidoc/plugin-svelte-prismjs": "^2.14.1",
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-netlify": "^1.0.0-next.84",
 		"@sveltejs/kit": "next",
 		"@types/prismjs": "^1.26.0",
 		"@untemps/svelte-readotron": "^1.5.1",
