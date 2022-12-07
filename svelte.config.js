@@ -19,7 +19,7 @@ const config = {
 		mdsvexGlobalComponents({
 			dir: `$lib/components`,
 			list: [["CodeFence", "CodeFence.svelte"]],
-			extensions: [".md"],
+			extensions: ['.md'],
 		  }),
 		mdsvex({
 			extensions: ['.md'],
