@@ -23,6 +23,7 @@
 		border-radius: var(--radius);
 		padding: var(--space-s);
 		margin: var(--space-xs) 0;
+		margin-bottom: var(--space-3xs);
 		max-width: var(--max-width);
 		border-style: none none none solid;
 		background-color: var(--surface4-light);
@@ -45,5 +46,11 @@
 	figure {
 		max-width: 60ch;
 		margin: auto;
+	}
+
+	figcaption {
+		text-align: right;
+		margin-right: var(--space-s-m);
+		margin-top: var(--space-3xs);
 	}
 </style>
