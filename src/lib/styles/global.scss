@@ -28,6 +28,7 @@ body {
   line-height: 1.4;
   letter-spacing: var(--tracking);
   background: var(--paper);
+  background-image: url('../../../noise.svg');
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   overflow: scroll;
